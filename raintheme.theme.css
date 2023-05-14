@@ -15,7 +15,36 @@
 @import url('https://thecommieaxolotl.github.io/BetterDiscord-Stuff/MaterialDesign/Clients/betterdiscord.css');
 @import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
 
+@import url('https://lolpowerluke.github.io/bd-themes/AlanWalkerTheme/plugins.css');
+/*Title Bar*/
+.wordmarkWindows-2dq6rw {
+  display: none;
+}
+.wordmark-2u86JB svg {
+  color: var(--title-bar-color);
+}
+.titleBar-1it3bQ:not(.typeMacOS-3V4xXE)::after {
+  content: var(--title-bar-content);
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  color: var(--title-bar-color);
+  display: block;
+  height: 16px;
+  width: fit-content;
+  pointer-events: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+.titleBar-1it3bQ .winButtonClose-3Q8ZH5 {
+  color: red;
+}
+/*all variables here*/
+.theme-light,
+.theme-dark,
 :root {
+  --title-bar-color: rgb(116, 116, 116);
+--title-bar-content: "DISCORD (Rain Theme)";
   --font-primary: Roboto;
   --font-code: Source Code Pro;
   --floating-background-opacity: 100;
@@ -152,6 +181,33 @@
   --skin-author: "TheCommieAxolotl";
 }
 
+  /* ~~~~		  		Watermark							~~~~ */
+  
+  .wordmarkWindows-2dq6rw svg {
+    position: fixed;
+    top: 3px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .typeWindows-2-g3UY {
+    z-index: 1;
+    background-color: var(--background-secondary-alt);
+  }
+  
+  /*
+  Basic Variables
+  See available vars here: https://github.com/DiscordStyles/Slate/wiki
+*/
+:root {
+    /* Primary Colors */
+    --accent: 3, 102, 214;
+    --link-colour: 48, 144, 255;
+  
+    /* Server List */
+    --server-icon-size: 35px;
+    --server-icon-spacing: 8px;
+    --server-container-padding: 10px;
+  }
+    /*Theme Dependent Stuff*/
+    --title-bar-content: "DISCORD (Rain Theme)";
 /* Any custom CSS below here */
-
-
